@@ -48,4 +48,3 @@ UPDATE boo.users SET user_plz = 70462 WHERE id = 2;
 
 /* Inhalte : Ergebnistabelle */
 SELECT * FROM boo.users;
-

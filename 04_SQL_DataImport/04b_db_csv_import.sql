@@ -30,3 +30,4 @@ WHERE age >= 30
 DELETE FROM boo.cats WHERE id = 2; -- Filter
 
 SELECT * FROM boo.cats;
+

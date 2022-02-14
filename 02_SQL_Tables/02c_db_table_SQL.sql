@@ -6,7 +6,7 @@
     DEFAULT-Werte eintragen
 */
 
-/* DB boo löschen, falls vorhanden*/
+/* DB boo lรถschen, falls vorhanden*/
 DROP DATABASE IF EXISTS boo;
 
 /* DB boo anlegen, falls noch nicht vorhanden*/
@@ -36,3 +36,4 @@ INSERT INTO boo.test(name,age) VALUES ("Maxine",25);
 
 /* ---- Inhalte der Tabelle anzeigen ---- */
 SELECT * FROM boo.test;
+
