@@ -26,3 +26,5 @@ IGNORE 1 ROWS
 ;
 
 SELECT * FROM boo.cats;
+
+# supi!
