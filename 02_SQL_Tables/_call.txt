@@ -1,0 +1,4 @@
+SHOWsource 02_SQL_Tables/02_db_table_SQL.sql
+DB_work/02_SQL_Tables/02a_db_table_SQL.sql
+
+DB_work/02_SQL_Tables/02b_db_table_SQL_copy0.sqlBB
