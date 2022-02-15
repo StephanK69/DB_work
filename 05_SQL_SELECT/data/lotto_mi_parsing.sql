@@ -40,12 +40,13 @@ IGNORE 1 ROWS
 SELECT
     Datum AS "Datum",
     Zahlen AS "Gewinnzahlen"
+    #Gewinn AS "Einsatz (falls bekannt)"
     
          
 
  FROM lotto.new 
  
-WHERE Zahlen LIKE "%-8-9-10%" 
+WHERE Zahlen LIKE "%39-40-41%"     #-20-25-3"  
  
 ORDER by Datum ASC LIMIT 4000
  
