@@ -1,47 +1,39 @@
-/* QUERIES Basic */
+/* QUERIES Filtern mit WHERE */
+
+
 
 /*
-Felder abfragen
-Felder kombinieren
-Ausgabe beschränken
+Eingrenzen/Filtern WHERE & AND/OR etc.
+Eingrenzen/Filtern WHERE & LIKE + Parameter
+Eingrenzen/Filtern WHERE & RegEx
+Eingrenzen/Filtern WHERE & IN / NOT IN
+Eingrenzen/Filtern WHERE & BETWEEN / NOT BETWEEN
 */
 
--- Abfrage aller Spalten der Tab
-#SELECT * FROM stocks.ccc;
 
--- Begrenzung: LIMIT
--- Abfrage eines Feldes oder einer Feld-Kombi m. Umbenennung (Alias)
--- Kombinationen aus mehreren Feldern in neues Feld 
--- hier mit Verknüpfung CONCAT() // String-Fkt.
+
+-- Eingrenzen/Filtern WHERE & AND/OR etc.
+-- Scharfe Suche
+
 SELECT
     ticker AS "SYM",
      c_name AS "Unternehmen",
     price AS "Kurs in $",
-    no_yrs AS "Jahre''",
-   
-    #dividend AS"Dividende",
+    payouts AS "Zahlung p.a.",
+    dividend AS "Dividende",
     #industry AS "Branche"
-    CONCAT (sector, "|", industry) AS "Operations"
-    
-    
-    
-    
+    CONCAT (sector, "|", industry) AS "Operations"    
 FROM stocks.ccc
-#ORDER BY ticker ASC
-#ORDER BY ticker DESC 
+-- Einzeldaten / Strings
+# WHERE sector = "Media"  -- spez. Sektor
+#WHERE sector = "Communication Services" AND industry = "Entertainment"
+WHERE sector = "Communication Services" 
+-- Sortierung
 
-#ORDER BY price ASC -- Kurs, beginnend mit der günstigsten Aktie
-#ORDER BY price DESC -- Kurs, beginnt mit der teuerste Aktie
-#ORDER BY no_yrs DESC -- Aktien mit der längsten Div.-Historie 
+ORDER BY price DESC
 
-ORDER BY sector DESC, industry ASC -- Kombination ASC / DESC alphabet.
-#ORDER BY no_yrs DESC, sector ASC -- Kombination ASC / DESC alphabet. / numerisch
-
-
-
-
-
--- X Zeilen ab 0
-LIMIT 40 
-
+-- Begrenzung
+LIMIT 40
 ;
+
+
