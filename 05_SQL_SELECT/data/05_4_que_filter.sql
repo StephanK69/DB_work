@@ -27,10 +27,14 @@ FROM stocks.ccc
 -- Einzeldaten / Strings
 # WHERE sector = "Media"  -- spez. Sektor
 #WHERE sector = "Communication Services" AND industry = "Entertainment"
-WHERE sector = "Communication Services" 
+#WHERE sector = "Communication Services" 
+#WHERE sector = "Communication Services" AND (industry = "Entertainment" OR industry = "Media")
+WHERE sector = "Communication Services" AND NOT industry = "Media"
+
+
 -- Sortierung
 
-ORDER BY price DESC
+ORDER BY industry DESC
 
 -- Begrenzung
 LIMIT 40
