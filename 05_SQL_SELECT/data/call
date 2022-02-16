@@ -1,3 +1,8 @@
-source 05_SQL_SELECT/data/05_1_parsi
-ng_csv.sql
-source 05_SQL_SELECT/05_2_que_basic.sql
+source 05_SQL_SELECT/data/05_1_parsing_csv.sql
+source 05_SQL_SELECT/data/05_2_que_basic.sql
+source 05_SQL_SELECT/data/05_3_que_sort.sql
+source 05_SQL_SELECT/data/05_4_que_filter.sql
+source 05_SQL_SELECT/data/05_5_que_stringf.sql
+source 05_SQL_SELECT/data/05_6a_que_ distinct.sql
+source 05_SQL_SELECT/data/05_6b_que_count.sql
+
