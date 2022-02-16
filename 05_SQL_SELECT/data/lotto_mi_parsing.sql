@@ -46,8 +46,18 @@ SELECT
 
  FROM lotto.new 
  
-WHERE Zahlen LIKE "%39-40-41%"     #-20-25-3"  
- 
+WHERE Zahlen LIKE "1-%" AND LIKE 
+
+#WHERE Zahlen LIKE "12-%" 
+#WHERE Zahlen LIKE "%13-%" 
+#WHERE Zahlen LIKE "%14-%" 
+
+
+
+
+
+
+
 ORDER by Datum ASC LIMIT 4000
  
 ;
