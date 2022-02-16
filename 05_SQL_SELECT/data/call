@@ -5,7 +5,7 @@ source 05_SQL_SELECT/data/05_4_que_filter.sql
 source 05_SQL_SELECT/data/05_5_que_stringf.sql
 source 05_SQL_SELECT/data/05_6a_que_ distinct.sql
 source 05_SQL_SELECT/data/05_6b_que_count.sql
-source 05_SQL_SELECT/05_6c_que_min_max.sql
-source 05_SQL_SELECT/05_6d_que_avg.sql
+source 05_SQL_SELECT/data/05_6c_que_min_max.sql
+source 05_SQL_SELECT/data/05_6d_que_avg.sql
 
 
