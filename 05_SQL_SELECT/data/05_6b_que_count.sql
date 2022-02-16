@@ -47,7 +47,9 @@ SELECT
 sector Industriesektoren,  -- nicht aggregiert /organisch
 count(DISTINCT industry) AS Branchen -- aggregiert, durch eine Funktion entstanden
 FROM stocks.ccc
+WHERE sector LIKE "Co%" -- Filter in NICHT organischen, bzw. aggrigierten Feldern (Spalten)
 GROUP BY sector -- bei Kombination organisch, bzw. aggregiert
+HAVING Branchen > 10 -- Filter in aggr. Feldern / nach GROUP
 ORDER BY Branchen DESC
 ;
 
